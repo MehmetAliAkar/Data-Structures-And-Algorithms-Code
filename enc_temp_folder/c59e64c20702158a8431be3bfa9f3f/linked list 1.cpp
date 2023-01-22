@@ -66,9 +66,8 @@ void arayaEkle(int n1, int num)
 	{
 		struct node* element = (struct node*)malloc(sizeof(struct node));
 		temp = start;
-		while (temp->next != NULL)
+		while (temp->next->data != n1 || temp->next != NULL)
 		{
-
 			temp = temp->next;
 		}
 		struct node* temp2;
@@ -102,7 +101,7 @@ int main()
 	{
 		printf("\n1->SONA EKLE");
 		printf("\n2->BASA EKLE");
-		printf("\n3->ARAYA EKLE");
+		printf("\n1->INSERT");
 		printf("\n4->YAZDIR");
 		printf("\n1->INSERT");
 		printf("\n6->EXIT");
